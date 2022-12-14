@@ -1,10 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
+    "actions":
     [
         {
-            "command": 
+            "command":
             {
                 "action": "copy",
                 "singleLine": false
@@ -20,7 +20,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command": 
+            "command":
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -32,10 +32,10 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{00000000-0000-0000-0000-000000000001}",
-    "profiles": 
+    "profiles":
     {
         "defaults": {
-            "font": 
+            "font":
             {
                 "face": "Fira Code",
                 "size": 12
@@ -47,7 +47,7 @@
             "cursorColor": "#FFFFFF",
             "historySize": 9001
         },
-        "list": 
+        "list":
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -98,10 +98,24 @@
                 "commandline": "\"%PROGRAMFILES%\\Git\\usr\\bin\\bash.exe\" --login -i",
                 "icon": "%PROGRAMFILES%\\Git\\mingw64\\share\\git\\git-for-windows.ico",
                 "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{00000000-0000-0000-0000-000000000002}",
+                "name": "Anaconda",
+                "commandline": "%windir%\\System32\\cmd.exe \"/K\" C:\\Users\\vinip\\miniconda3\\Scripts\\activate.bat C:\\Users\\vinip\\miniconda3",
+                "icon": "C:\\Users\\vinip\\miniconda3\\Menu\\Iconleak-Atrous-Console.ico",
+                "startingDirectory": "%USERPROFILE%"
+            },
+            {
+                "guid": "{00000000-0000-0000-0000-000000000003}",
+                "name": "Anaconda Powershell",
+                "commandline": "%windir%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\vinip\\miniconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\vinip\\miniconda3' \"3",
+                "icon": "C:\\Users\\vinip\\miniconda3\\Menu\\Iconleak-Atrous-PSConsole.ico",
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
-    "schemes": 
+    "schemes":
     [
         {
             "background": "#0C0C0C",
